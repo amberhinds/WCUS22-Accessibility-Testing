@@ -1,7 +1,5 @@
 /**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
- *
- * By Hakim El Hattab, http://hakim.se
+ * Dark blue and yellow theme for reveal.js. Uses the same fonts and color palette as the Equalize Digital website and WP Accessibility Meetup.
  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Sen:wght@400;700&display=swap');
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
@@ -31,8 +29,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #42affa;
-  --r-link-color-dark: #068de9;
+  --r-link-color: #F3CD1E;
+  --r-link-color-dark: #0D5FA0;
   --r-link-color-hover: #8dcffc;
   --r-selection-background-color: #bee4fd;
   --r-selection-color: #fff;
