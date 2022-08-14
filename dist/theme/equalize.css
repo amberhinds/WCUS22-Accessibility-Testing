@@ -34,6 +34,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-link-color-hover: #8dcffc;
   --r-selection-background-color: #bee4fd;
   --r-selection-color: #072446;
+  --r-highlight-color: #F3CD1E;
 }
 
 .reveal-viewport {
@@ -308,6 +309,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin: var(--r-block-margin) 0;
 }
 
+.highlight {
+  background-color: var(--r-highlight-color);
+  color:  var(--r-selection-color);
+}
+
 .speaker-bio {
   margin: 50px 0;
   overflow: hidden;
@@ -348,6 +354,20 @@ section.has-light-background, section.has-light-background h1, section.has-light
   color: #fff;
   background: var(--r-link-color-dark);
 }
+
+/*********************************************
+ * SCREEN READER TEXT
+ *********************************************/
+.sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
 
 /*********************************************
  * Frame helper
