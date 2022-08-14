@@ -61,97 +61,97 @@
 				</section>
 				<section>
 					<h2>Automated Accessibility Testing</h2>
-					<section>
-						<h3>Why start with automated scans?</h3>
-						<p>Speed up identification of many problems in bulk and rapidly provide a full site assessment.</p>
-						<p>Don’t waste auditor or user tester time identifying and reporting on problems that can be identified automatically. <span class="highlight">Saved time = saved cost.</span></p>
-						<p>Side note: many lawsuits list WAVE errors in complaint.</p>
-					</section>
-					<section>
-						<h3>Single Page Accessibility Scanners</h3>
-						<p>Websites or browser extensions that allow you to test one page at a time.</p>
-						<ul>
-							<li><a href="https://wave.webaim.org/">Web Accessibility Evaluation Tool (WAVE)</a></li>
-							<li><a href="https://www.deque.com/axe/">axe browser extension (Firefox, Chrome, Edge)</a></li>
-							<li><a href="https://www.ibm.com/able/toolkit/tools/">IBM Equal Access Checker</a></li>
-							<li><a href="https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en">Colorblindly Chrome Extension</a></li>
-							<li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en">HeadingsMap Chrome Extension</a> (also available for <a href="https://addons.mozilla.org/en-US/firefox/addon/headingsmap/">FireFox<span class="sr-only"> HeadingsMap extension</span></a>)</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Bulk Accessibility Scanners</h3>
-						<p>Plugins or SaaS solutions that will scan your entire website at once and provide high level overviews of problems existing sitewide.</p>
-						<ul>
-							<li><a href="https://equalizedigital.com/accessibility-checker/?utm_source=WCUS22slides&utm_medium=referral">Accessibility Checker WordPress Plugin</a></li>
-							<li><a href="https://monsido.com/">Monsido</a></li>
-							<li><a href="https://pope.tech/">PopeTech</a></li>
-							<li><a href="https://www.siteimprove.com/">Siteimprove</a></li>
-						</ul>
-					</section>
-					<section>
-						<h3>Limitations of Automated Scanners</h3>
-						<p>Automated testing tools only catch 30-50% of issues (depending upon who you ask).</p>
-						<p>Many accessibility problems require human judgement - either to find the problem in the first place or to assess the issue and decide on a proper solution.</p>
-						<p>Don't rely on automated testing tools alone. <span class="highlight">Manual testing is required to achieve true accessibility.</span></p>
-					</section>
+				</section>
+				<section>
+					<h3>Why start with automated scans?</h3>
+					<p>Speed up identification of many problems in bulk and rapidly provide a full site assessment.</p>
+					<p>Don’t waste auditor or user tester time identifying and reporting on problems that can be identified automatically. <span class="highlight">Saved time = saved cost.</span></p>
+					<p>Side note: many lawsuits list WAVE errors in complaint.</p>
+				</section>
+				<section>
+					<h3>Single Page Accessibility Scanners</h3>
+					<p>Websites or browser extensions that allow you to test one page at a time.</p>
+					<ul>
+						<li><a href="https://wave.webaim.org/">Web Accessibility Evaluation Tool (WAVE)</a></li>
+						<li><a href="https://www.deque.com/axe/">axe browser extension (Firefox, Chrome, Edge)</a></li>
+						<li><a href="https://www.ibm.com/able/toolkit/tools/">IBM Equal Access Checker</a></li>
+						<li><a href="https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en">Colorblindly Chrome Extension</a></li>
+						<li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en">HeadingsMap Chrome Extension</a> (also available for <a href="https://addons.mozilla.org/en-US/firefox/addon/headingsmap/">FireFox<span class="sr-only"> HeadingsMap extension</span></a>)</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Bulk Accessibility Scanners</h3>
+					<p>Plugins or SaaS solutions that will scan your entire website at once and provide high level overviews of problems existing sitewide.</p>
+					<ul>
+						<li><a href="https://equalizedigital.com/accessibility-checker/?utm_source=WCUS22slides&utm_medium=referral">Accessibility Checker WordPress Plugin</a></li>
+						<li><a href="https://monsido.com/">Monsido</a></li>
+						<li><a href="https://pope.tech/">PopeTech</a></li>
+						<li><a href="https://www.siteimprove.com/">Siteimprove</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Limitations of Automated Scanners</h3>
+					<p>Automated testing tools only catch 30-50% of issues (depending upon who you ask).</p>
+					<p>Many accessibility problems require human judgement - either to find the problem in the first place or to assess the issue and decide on a proper solution.</p>
+					<p>Don't rely on automated testing tools alone. <span class="highlight">Manual testing is required to achieve true accessibility.</span></p>
 				</section>
 				<section>
 					<h2>Keyboard Testing</h2>
+				</section>
+				<section>
+					<h3>Why Keyboard Test Before Screen Reader Testing</h3>
+					<p>Not all keyboard-only users are screen reader users. People who are sighted but have mobility challenges (limb diferences, severe arthritus, paraplegia, etc.) may use only a keyboard to navigate the web.</p>
+					<p>Screen readers add accessibility features (such as focus outlines) you may not realize are missing if you only test with a screen reader.</p>
+					<p>Keyboard-only testing allows you to focus on functionality, then you can screen reader test and focus on what you hear and how things are announced.</p>
+				</section>
+				<section>
+					<h3>How to Keyboard Test</h3>
+					<p>Open a Chrome or Firefox browser. Using the tab key and arrow keys to move through the website. Press return to follow links. Use the return key or space bar to trigger buttons.</p>
+					<p>Do everything that you would want website users to do: engage with sliders or carousels, add products to carts and check out, fillout and submit forms, etc.</p>
+					<p>If you run into a problem, inspecting the code can help to pinpoint the problem.</p>
+				</section>
+				<section>
+					<h3>What We're Looking For (1)</h3>
+					<ul>
+						<li>No functionality requires a mouse or cannot be reached with a keyboard only.</li>
+						<li>Skip links exist and jump to the correct section on the page.</li>
+						<li>An obvious focus outline is present on all focusable elements (2px, with an offset and sufficient color contrast).</li>
+						<li>Focus order follows the order of the page (left to right, top to bottom).</li>
+						<li>Hidden elements are not focusable.</li>
+				</section>
+				<section>
+					<h3>Pro Tips for Tracking Focus</h3>
 					<section>
-						<h3>Why Keyboard Test Before Screen Reader Testing</h3>
-						<p>Not all keyboard-only users are screen reader users. People who are sighted but have mobility challenges (limb diferences, severe arthritus, paraplegia, etc.) may use only a keyboard to navigate the web.</p>
-						<p>Screen readers add accessibility features (such as focus outlines) you may not realize are missing if you only test with a screen reader.</p>
-						<p>Keyboard-only testing allows you to focus on functionality, then you can screen reader test and focus on what you hear and how things are announced.</p>
+						<h4>If there isn't a focus outline at all:</h4>
+						<ol>
+							<li>Look at the styles in dev tools for CSS disabling it and uncheck the box so that line is ignored by your browser.<br>
+							<img src="https://equalizedigital.com/wp-content/uploads/2022/08/css-blocking-focus-outline.png" alt="Chrome dev tools screenshot showing CSS styles for various elements with :focus selectors and outline: none !important;">
+							</li>
+							<li>Add your own styles to the inspector stylesheet.<br>
+								<code>:focus {
+								    outline: 2px solid;
+								    outline-offset: 2px;
+								    outline-color: -webkit-focus-ring-color;
+									}
+								</code>
+							</li>
+						</ol>
 					</section>
 					<section>
-						<h3>How to Keyboard Test</h3>
-						<p>Open a Chrome or Firefox browser. Using the tab key and arrow keys to move through the website. Press return to follow links. Use the return key or space bar to trigger buttons.</p>
-						<p>Do everything that you would want website users to do: engage with sliders or carousels, add products to carts and check out, fillout and submit forms, etc.</p>
-						<p>If you run into a problem, inspecting the code can help to pinpoint the problem.</p>
+						<h4>If hidden elements get focus:</h4>
+						<ol>
+							<li>Open the console in dev tools.</li>
+							<li>Click Create Live Expression Create Live Expression <img src="https://wd.imgix.net/image/admin/IPDgkbaWTrf05ffw1JSt.png?auto=format&w=66" alt="eye icon used by Chrome dev tools to open the live expression toolbar.">.<br>
+							<img src="https://wd.imgix.net/image/admin/3iWMW3uh7GaqUWxv8uB1.png?auto=format&w=1600" alt="Create live expression toolbar open in Chrome dev tools.">
+							</li>
+							<li>Type <code>document.activeElement</code>.</li>
+							<li>Click outside of the Live Expression UI to save.</li>
+						</ol>
+						<img src="https://equalizedigital.com/wp-content/uploads/2022/08/live-expression-showing-focused-element-in-chrome-dev-tools.png" alt="Chrome dev console showing the focused elememt under a heading of document.activeElement">
 					</section>
-					<section>
-						<h3>What We're Looking For (1)</h3>
-						<ul>
-							<li>No functionality requires a mouse or cannot be reached with a keyboard only.</li>
-							<li>Skip links exist and jump to the correct section on the page.</li>
-							<li>An obvious focus outline is present on all focusable elements (2px, with an offset and sufficient color contrast).</li>
-							<li>Focus order follows the order of the page (left to right, top to bottom).</li>
-							<li>Hidden elements are not focusable.</li>
-					</section>
-					<section>
-						<h3>Pro Tips for Tracking Focus</h3>
-						<section>
-							<h4>If there isn't a focus outline at all:</h4>
-							<ol>
-								<li>Look at the styles in dev tools for CSS disabling it and uncheck the box so that line is ignored by your browser.<br>
-								<img src="https://equalizedigital.com/wp-content/uploads/2022/08/css-blocking-focus-outline.png" alt="Chrome dev tools screenshot showing CSS styles for various elements with :focus selectors and outline: none !important;">
-								</li>
-								<li>Add your own styles to the inspector stylesheet.<br>
-									<code>:focus {
-									    outline: 2px solid;
-									    outline-offset: 2px;
-									    outline-color: -webkit-focus-ring-color;
-										}
-									</code>
-								</li>
-							</ol>
-						</section>
-						<section>
-							<h4>If hidden elements get focus:</h4>
-							<ol>
-								<li>Open the console in dev tools.</li>
-								<li>Click Create Live Expression Create Live Expression <img src="https://wd.imgix.net/image/admin/IPDgkbaWTrf05ffw1JSt.png?auto=format&w=66" alt="eye icon used by Chrome dev tools to open the live expression toolbar.">.<br>
-								<img src="https://wd.imgix.net/image/admin/3iWMW3uh7GaqUWxv8uB1.png?auto=format&w=1600" alt="Create live expression toolbar open in Chrome dev tools.">
-								</li>
-								<li>Type <code>document.activeElement</code>.</li>
-								<li>Click outside of the Live Expression UI to save.</li>
-							</ol>
-							<img src="https://equalizedigital.com/wp-content/uploads/2022/08/live-expression-showing-focused-element-in-chrome-dev-tools.png" alt="Chrome dev console showing the focused elememt under a heading of document.activeElement">
-						</section>
-					</section>
-					<section>
-						<h3>What We're Looking For (2)</h3>
-					</section>
+				</section>
+				<section>
+					<h3>What We're Looking For (2)</h3>
 				</section>
 			</div>
 		</div>
