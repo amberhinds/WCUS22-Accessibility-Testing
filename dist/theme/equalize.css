@@ -237,7 +237,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal code {
   font-family: var(--r-code-font);
   text-transform: none;
-  tab-size: 2;
+  tab-size: 1;
 }
 
 .reveal pre code {
@@ -246,6 +246,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
   overflow: auto;
   max-height: 400px;
   word-wrap: normal;
+  background: #F3F4FC;
+  color: #333;
 }
 
 .reveal .code-wrapper {

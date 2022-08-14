@@ -72,9 +72,9 @@
 					<h3>Single Page Accessibility Scanners</h3>
 					<p>Websites or browser extensions that allow you to test one page at a time.</p>
 					<ul>
-						<li><a href="https://wave.webaim.org/">Web Accessibility Evaluation Tool (WAVE)</a></li>
-						<li><a href="https://www.deque.com/axe/">axe browser extension (Firefox, Chrome, Edge)</a></li>
-						<li><a href="https://www.ibm.com/able/toolkit/tools/">IBM Equal Access Checker</a></li>
+						<li><a href="https://wave.webaim.org/">Web Accessibility Evaluation Tool (WAVE)</a> (Website or browser extension)</li>
+						<li><a href="https://www.deque.com/axe/">axe browser extension</a> (Chrome, Firefox, Edge)</li>
+						<li><a href="https://www.ibm.com/able/toolkit/tools#develop">IBM Equal Access Checker</a> (Chrome, Firefox, Karma, NPM)</li>
 						<li><a href="https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en">Colorblindly Chrome Extension</a></li>
 						<li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en">HeadingsMap Chrome Extension</a> (also available for <a href="https://addons.mozilla.org/en-US/firefox/addon/headingsmap/">FireFox<span class="sr-only"> HeadingsMap extension</span></a>)</li>
 					</ul>
@@ -111,13 +111,13 @@
 					<p>If you run into a problem, inspecting the code can help to pinpoint the problem.</p>
 				</section>
 				<section>
-					<h3>What We're Looking For (1)</h3>
+					<h3>What We're Looking For: Focus</h3>
 					<ul>
-						<li>No functionality requires a mouse or cannot be reached with a keyboard only.</li>
-						<li>Skip links exist and jump to the correct section on the page.</li>
 						<li>An obvious focus outline is present on all focusable elements (2px, with an offset and sufficient color contrast).</li>
 						<li>Focus order follows the order of the page (left to right, top to bottom).</li>
 						<li>Hidden elements are not focusable.</li>
+						<li>Jump or anchor links shift keyboard focus in addition to scrolling.</li>
+						<li>Popups receive focus when opened and cannot be tabbed out of without closing it with a button.</li>
 				</section>
 				<section>
 					<h3>Pro Tips for Tracking Focus</h3>
@@ -128,12 +128,12 @@
 							<img src="https://equalizedigital.com/wp-content/uploads/2022/08/css-blocking-focus-outline.png" alt="Chrome dev tools screenshot showing CSS styles for various elements with :focus selectors and outline: none !important;">
 							</li>
 							<li>Add your own styles to the inspector stylesheet.<br>
-								<code>:focus {
+								<pre><code>:focus {
 								    outline: 2px solid;
 								    outline-offset: 2px;
 								    outline-color: -webkit-focus-ring-color;
 									}
-								</code>
+								</code></pre>
 							</li>
 						</ol>
 					</section>
@@ -151,7 +151,11 @@
 					</section>
 				</section>
 				<section>
-					<h3>What We're Looking For (2)</h3>
+					<h3>What We're Looking For: Usability</h3>
+					<ul>
+						<li>No Functionality requires a mouse and everything can be reached with a keyboard only.</li>
+						<li>Skip links exist and jump to the correct section on the page.</li>
+					</ul>
 				</section>
 			</div>
 		</div>
