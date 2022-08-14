@@ -33,7 +33,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-link-color-dark: #0D5FA0;
   --r-link-color-hover: #8dcffc;
   --r-selection-background-color: #bee4fd;
-  --r-selection-color: #0D5FA0;
+  --r-selection-color: #072446;
 }
 
 .reveal-viewport {
@@ -123,9 +123,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .subtitle {
-  text-align: center;
+  text-align: center !important;
   font-size: var(--r-heading2-size);
-  line-height: 1;
+  line-height: 1 !important;
 }
 
 /* Remove trailing margins after titles */
@@ -161,6 +161,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   display: inline-block;
   text-align: left;
   margin: 0 0 0 1em;
+  width:  95%;
 }
 
 .reveal ol {
