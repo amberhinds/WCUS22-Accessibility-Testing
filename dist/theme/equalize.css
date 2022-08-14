@@ -189,6 +189,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin-left: 40px;
 }
 
+.reveal li {
+  margin-bottom: 10px;
+}
+
 .reveal dt {
   font-weight: bold;
 }
