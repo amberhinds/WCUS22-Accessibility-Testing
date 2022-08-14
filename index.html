@@ -81,7 +81,7 @@
 				</section>
 				<section>
 					<h3>Bulk Accessibility Scanners</h3>
-					<p>Plugins or SaaS solutions that will scan your entire website at once and provide high level overviews of problems existing sitewide.</p>
+					<p>Plugins or SaaS solutions that will scan your entire website at once. These provide high level overviews of problems existing sitewide and can provide historical data.</p>
 					<ul>
 						<li><a href="https://equalizedigital.com/accessibility-checker/?utm_source=WCUS22slides&utm_medium=referral">Accessibility Checker WordPress Plugin</a></li>
 						<li><a href="https://monsido.com/">Monsido</a></li>
@@ -94,6 +94,15 @@
 					<p>Automated testing tools only catch 30-50% of issues (depending upon who you ask).</p>
 					<p>Many accessibility problems require human judgement - either to find the problem in the first place or to assess the issue and decide on a proper solution.</p>
 					<p><span class="highlight">Don't rely on automated testing tools alone.</span> Manual testing is required to achieve true accessibility.</p>
+				</section>
+				<section>
+					<h2>Web Content Accessibility Guidelines (WCAG)</h2>
+					<ul>
+						<li>Measurable criteria you can use to assess the accessibility of websites, software, or documents.</li>
+						<li>Generally you want to meet <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a> AA as a minimum standard, but try for AAA where possible.</li>
+						<li><a href="https://equalizedigital.com/WCAGquickref">WCAG Quick Reference (Google Sheet)</a></li>
+						<li>WCAG conformance is helpful, but utimately it's about usability.</li>
+					</ul>
 				</section>
 				<section>
 					<h2>Keyboard Testing</h2>
@@ -153,6 +162,95 @@
 					<ul>
 						<li>No Functionality requires a mouse and everything can be reached with a keyboard only.</li>
 						<li>Skip links exist and jump to the correct section on the page.</li>
+						<li>Links in body content are underlined/don't rely on color alone.</li>
+						<li>Any content that autoplays for more than 5 seconds has a pause button.</li>
+						<li>Form fields have visible labels with an obvious required indicator (“required” is better than *).</li>
+						<li>No changes of content or context without warning or user action.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>What We're Looking For: Content</h3>
+					<ul>
+						<li>Only links are underlined - no underlines for emphasis.</li>
+						<li>If the language of a section changes the new language is declared with an <a href="https://www.w3schools.com/tags/att_global_lang.asp">HTML lang attribute</a></li>
+						<li>Videos have accurate captions.</li>
+						<li>Videos and audio files have a transcript immediately after the media.</li>
+						<li>Nothing is written in all caps.</li>
+						<li>Manually check color contrast, especially for text over images.</li>
+						<li>No images are added of text.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Popup Accessibility</h3>
+					<ul>
+						<li>Do you really need a popup?</li>
+						<li>When popup opens, focus is shifted to the open popup and screen readers announce that a popup has opened.</li>
+						<li>Popup contains a heading and accessible content.</li>
+						<li>Focus when hitting the tab key is locked so user cannot leave the popup without closing it.</li>
+						<li>Close button is appropriately labeled and works with keyboard only. Escape should also close the popup.</li>
+						<li>When popup is closed user’s focus returns to where they were on the page when it opened.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Keyboard Testing Demo</h3>
+					<p>Demo time! Follow along as Amber keyboard tests [website TBD].</p>
+				</section>
+				<section>
+					<h2>Screen Reader Testing</h2>
+				</section>
+				<section>
+					<h3>Recommended Screen Readers</h3>
+					<ul>
+						<li>Windows: <a href="https://www.nvaccess.org/download/">NVDA</a></li>
+						<li>Mac: <a href="https://www.apple.com/voiceover/info/guide/_1121.html">VoiceOver</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Getting Started with a Screen Reader</h3>
+					<ul>
+						<li><a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts">NVDA keyboard shortcuts</a></li>
+						<li><a href="https://www.apple.com/voiceover/info/guide/_1131.html">VoiceOver keyboard shortcuts</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3>What to Listen For</h3>
+					<ul>
+						<li>Link anchor text is meaningful without surrounding content.</li>
+						<li>Image alternative text accurately describes the purpose of the image on the page.</li>
+						<li>There are no empty links or unlabeled buttons.</li>
+						<li>Form error and success messages are announced by the screen reader.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Screen Reader Testing Demo</h3>
+					<p>Demo time! Follow along as Alex screen reader tests [website TBD].</p>
+				</section>
+				<section>
+					<h2>Independent Testing Time</h2>
+					<p>15-20 minutes for testing your own website.</p>
+					<p>Take note of things that surprised you and things you're not sure about for Q&A and discussion.</p>
+				</section>
+				<section>
+					<h2>Q&A and Discussion</h2>
+				</section>
+				<section>
+					<h2>Keep Learning</h2>
+					<h3><a href="https://equalizedigital.com/wordpress-accessibility-meetup/?utm_source=WCUS22slides&utm_medium=referral">WordPress Accessibility Meetup</a></h3>
+					<p>Meets twice per month on the first Thursday at 10 AM central and third Monday at 7 PM central via Zoom. All meetups are live captioned and pre-approved for continuning ed credits with the IAAP.</p>
+					<h3><a href="https://wpaccessibility.day/?utm_source=WCUS22slides&utm_medium=referral">WordPress Accessibility Day</a></h3>
+					<p>Free 24 hour conference November 2-3 held via Zoom. Live captioned and sign language interpretation.</p>
+				</section>
+				<section>
+					<h2>Contact Us</h2>
+					<h3>Amber Hinds</h3>
+					<ul>
+						<li><a href="https://equalizedigital.com/?utm_source=WCUS22slides&utm_medium=referral"></a>EqualizeDigital.com</li>
+						<li><a href="https://twitter.com/heyamberhinds">@HeyAmberHinds on Twitter</a></li>
+						<li><a href="https://www.facebook.com/groups/wordpress.accessibility">Q&A in the WordPress Accessibility Facebook group</a></li>
+					</ul>
+					<h3>Alex Stine</h3>
+					<ul>
+						<li><a href="https://www.linkedin.com/in/alexleestine303/">Connect with Alex on LinkedIn</a></li>
 					</ul>
 				</section>
 			</div>
