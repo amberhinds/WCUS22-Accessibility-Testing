@@ -22,7 +22,7 @@
 			</div>
 			<div class="slides" role="main" aria-label="Slide Content">
 				<section>
-					<h2>About the Speakers</h2>
+					<h2 class="slide-title">About the Speakers</h2>
 					<div class="speaker-bio">
 						<img src="https://secure.gravatar.com/avatar/c9173fdb61f5799850739f5eaafa4b26?s=256&d=mm&r=g" alt="Amber Hinds is a white woman in her 30's with brown hair and a friendly smile.">
 						<h3>Amber Hinds</h3>
@@ -35,7 +35,7 @@
 					</div>
 				</section>
 				<section>
-					<h2>Agenda</h2>
+					<h2 class="slide-title">Agenda</h2>
 					<ul>
 						<li>Testing process</li>
 						<li>Automated accessibility testing</li>
@@ -46,7 +46,7 @@
 					</ul>
 				</section>
 				<section>
-					<h2>Testing Process</h2>
+					<h2 class="slide-title">Testing Process</h2>
 					<ol>
 						<li>Run an automated scanning tool to check for obvious accessibility problems.</li>
 						<li>Manually test a representative page of every type (home, archives + singles, and any pages with special features):</li>
@@ -60,16 +60,16 @@
 					</ol>
 				</section>
 				<section>
-					<h2>Automated Accessibility Testing</h2>
+					<h2 class="slide-title">Automated Accessibility Testing</h2>
 				</section>
 				<section>
-					<h3>Why start with automated scans?</h3>
+					<h3 class="slide-title">Why start with automated scans?</h3>
 					<p>Speed up identification of many problems in bulk and rapidly provide a full site assessment.</p>
 					<p>Don’t waste auditor or user tester time identifying and reporting on problems that can be identified automatically. <span class="highlight">Saved time = saved cost.</span></p>
 					<p>Side note: many lawsuits list WAVE errors in complaint.</p>
 				</section>
 				<section>
-					<h3>Single Page Accessibility Scanners</h3>
+					<h3 class="slide-title">Single Page Accessibility Scanners</h3>
 					<p>Websites or browser extensions that allow you to test one page at a time.</p>
 					<ul>
 						<li><a href="https://wave.webaim.org/">Web Accessibility Evaluation Tool (WAVE)</a> (Website or browser extension)</li>
@@ -80,7 +80,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Bulk Accessibility Scanners</h3>
+					<h3 class="slide-title">Bulk Accessibility Scanners</h3>
 					<p>Plugins or SaaS solutions that will scan your entire website at once. These provide high level overviews of problems existing sitewide and can provide historical data.</p>
 					<ul>
 						<li><a href="https://equalizedigital.com/accessibility-checker/?utm_source=WCUS22slides&utm_medium=referral">Accessibility Checker WordPress Plugin</a></li>
@@ -90,13 +90,13 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Limitations of Automated Scanners</h3>
+					<h3 class="slide-title">Limitations of Automated Scanners</h3>
 					<p>Automated testing tools only catch 30-50% of issues (depending upon who you ask).</p>
 					<p>Many accessibility problems require human judgement - either to find the problem in the first place or to assess the issue and decide on a proper solution.</p>
 					<p><span class="highlight">Don't rely on automated testing tools alone.</span> Manual testing is required to achieve true accessibility.</p>
 				</section>
 				<section>
-					<h2>Web Content Accessibility Guidelines (WCAG)</h2>
+					<h2 class="slide-title">Web Content Accessibility Guidelines (WCAG)</h2>
 					<ul>
 						<li>Measurable criteria you can use to assess the accessibility of websites, software, or documents.</li>
 						<li>Generally you want to meet <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a> AA as a minimum standard, but try for AAA where possible.</li>
@@ -105,22 +105,22 @@
 					</ul>
 				</section>
 				<section>
-					<h2>Keyboard Testing</h2>
+					<h2 class="slide-title">Keyboard Testing</h2>
 				</section>
 				<section>
-					<h3>Why Keyboard Test Before Screen Reader Testing</h3>
+					<h3 class="slide-title">Why Keyboard Test Before Screen Reader Testing</h3>
 					<p>Not all keyboard-only users are screen reader users. People who are sighted but have mobility challenges (limb diferences, severe arthritus, paraplegia, etc.) may use only a keyboard to navigate the web.</p>
 					<p>Screen readers add accessibility features (such as focus outlines) you may not realize are missing if you only test with a screen reader.</p>
 					<p>Keyboard-only testing allows you to focus on functionality, then you can screen reader test and focus on what you hear and how things are announced.</p>
 				</section>
 				<section>
-					<h3>How to Keyboard Test</h3>
+					<h3 class="slide-title">How to Keyboard Test</h3>
 					<p>Open a Chrome or Firefox browser. Using the tab key and arrow keys to move through the website. Press return to follow links. Use the return key or space bar to trigger buttons.</p>
 					<p>Do everything that you would want website users to do: engage with sliders or carousels, add products to carts and check out, fillout and submit forms, etc.</p>
 					<p>If you run into a problem, inspecting the code can help to pinpoint the problem.</p>
 				</section>
 				<section>
-					<h3>What We're Looking For: Focus</h3>
+					<h3 class="slide-title">What We're Looking For: Focus</h3>
 					<ul>
 						<li>An obvious focus outline is present on all focusable elements (2px, with an offset and sufficient color contrast).</li>
 						<li>Focus order follows the order of the page (left to right, top to bottom).</li>
@@ -129,9 +129,9 @@
 						<li>Popups receive focus when opened and cannot be tabbed out of without closing it with a button.</li>
 				</section>
 				<section>
-					<h3>Pro Tips for Tracking Focus</h3>
+					<h3 class="slide-title">Pro Tips for Tracking Focus</h3>
 					<section>
-						<h4>If there isn't a focus outline at all:</h4>
+						<h4 class="slide-title">If there isn't a focus outline at all:</h4>
 						<ol>
 							<li>Check styles in the inspector for CSS disabling the outline and uncheck the box so that code is ignored by your browser.<br>
 							<img src="https://equalizedigital.com/wp-content/uploads/2022/08/css-blocking-focus-outline.png" alt="Chrome dev tools screenshot showing CSS styles for various elements with :focus selectors and outline: none !important;" width="500px" height="auto">
@@ -147,7 +147,7 @@
 						</ol>
 					</section>
 					<section>
-						<h4>If hidden elements get focus:</h4>
+						<h4 class="slide-title">If hidden elements get focus:</h4>
 						<ol>
 							<li>Open the console in dev tools.</li>
 							<li>Click the Create Live Expression button. <img src="https://wd.imgix.net/image/admin/IPDgkbaWTrf05ffw1JSt.png?auto=format&amp;w=50" alt="eye icon used by Chrome dev tools to open the live expression toolbar." style="margin: 0;"></li>
@@ -158,7 +158,7 @@
 					</section>
 				</section>
 				<section>
-					<h3>What We're Looking For: Usability</h3>
+					<h3 class="slide-title">What We're Looking For: Usability</h3>
 					<ul>
 						<li>No Functionality requires a mouse and everything can be reached with a keyboard only.</li>
 						<li>Skip links exist and jump to the correct section on the page.</li>
@@ -169,7 +169,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3>What We're Looking For: Content</h3>
+					<h3 class="slide-title">What We're Looking For: Content</h3>
 					<ul>
 						<li>Only links are underlined - no underlines for emphasis.</li>
 						<li>If the language of a section changes the new language is declared with an <a href="https://www.w3schools.com/tags/att_global_lang.asp">HTML lang attribute</a></li>
@@ -181,7 +181,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Popup Accessibility</h3>
+					<h3 class="slide-title">Popup Accessibility</h3>
 					<ul>
 						<li>Do you really need a popup?</li>
 						<li>Avoid popups that open based on some condition other than a user triggered condition such as a button click/selection. Changes in context with no warning can be confusing.</li>
@@ -193,14 +193,14 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Keyboard Testing Demo</h3>
+					<h3 class="slide-title">Keyboard Testing Demo</h3>
 					<p>Demo time! Follow along as Amber keyboard tests [website TBD].</p>
 				</section>
 				<section>
-					<h2>Screen Reader Testing</h2>
+					<h2 class="slide-title">Screen Reader Testing</h2>
 				</section>
 				<section>
-					<h3>Recommended Screen Readers</h3>
+					<h3 class="slide-title">Recommended Screen Readers</h3>
 					<ul>
 						<li>Windows: <a href="https://www.nvaccess.org/download/">NVDA</a></li>
 						<li>Mac: <a href="https://www.apple.com/voiceover/info/guide/_1121.html">VoiceOver</a></li>
@@ -208,7 +208,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Getting Started with a Screen Reader</h3>
+					<h3 class="slide-title">Getting Started with a Screen Reader</h3>
 					<ul>
 						<li><a href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts">NVDA keyboard shortcuts</a></li>
 						<li><a href="https://www.apple.com/voiceover/info/guide/_1131.html">VoiceOver keyboard shortcuts</a></li>
@@ -218,7 +218,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3>What to Listen For</h3>
+					<h3 class="slide-title">What to Listen For</h3>
 					<ul>
 						<li>Link anchor text is meaningful without surrounding content.</li>
 						<li>Image alternative text accurately describes the purpose of the image on the page.</li>
@@ -228,26 +228,26 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Screen Reader Testing Demo</h3>
+					<h3 class="slide-title">Screen Reader Testing Demo</h3>
 					<p>Demo time! Follow along as Alex screen reader tests [website TBD].</p>
 				</section>
 				<section>
-					<h2>Independent Testing Time</h2>
+					<h2 class="slide-title">Independent Testing Time</h2>
 					<p>15-20 minutes for testing your own website.</p>
 					<p>Take note of things that surprised you and things you're not sure about for Q&A and discussion.</p>
 				</section>
 				<section>
-					<h2>Q&A and Discussion</h2>
+					<h2 class="slide-title">Q&A and Discussion</h2>
 				</section>
 				<section>
-					<h2>Keep Learning</h2>
+					<h2 class="slide-title">Keep Learning</h2>
 					<h3><a href="https://equalizedigital.com/wordpress-accessibility-meetup/?utm_source=WCUS22slides&utm_medium=referral">WordPress Accessibility Meetup</a></h3>
 					<p>Meets twice per month on the first Thursday at 10 AM central and third Monday at 7 PM central via Zoom. All meetups are live captioned and pre-approved for continuning ed credits with the IAAP.</p>
 					<h3><a href="https://wpaccessibility.day/?utm_source=WCUS22slides&utm_medium=referral">WordPress Accessibility Day</a></h3>
 					<p>Free 24 hour conference November 2-3 held via Zoom. Live captioned and sign language interpretation.</p>
 				</section>
 				<section>
-					<h2>Contact Us</h2>
+					<h2 class="slide-title">Contact Us</h2>
 					<h3>Amber Hinds</h3>
 					<ul style="margin-bottom: 40px;">
 						<li><a href="https://equalizedigital.com/?utm_source=WCUS22slides&utm_medium=referral">EqualizeDigital.com</a></li>
