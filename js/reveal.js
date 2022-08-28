@@ -2219,6 +2219,10 @@ export default function( revealElement, options ) {
 			slide( indexh - 1, config.navigationMode === 'grid' ? indexv : undefined );
 		}
 
+		// Reset focus to top of new slide.
+		const currentSlide = document.querySelector('section.present h2');
+		currentSlide.setAttribute('tabindex', '-1');
+		currentSlide.focus();
 	}
 
 	function navigateRight({skipFragments=false}={}) {
@@ -2236,6 +2240,10 @@ export default function( revealElement, options ) {
 			slide( indexh + 1, config.navigationMode === 'grid' ? indexv : undefined );
 		}
 
+		// Reset focus to top of new slide.
+		const currentSlide = document.querySelector('section.present h2');
+		currentSlide.setAttribute('tabindex', '-1');
+		currentSlide.focus();
 	}
 
 	function navigateUp({skipFragments=false}={}) {
@@ -2295,10 +2303,6 @@ export default function( revealElement, options ) {
 			}
 		}
 
-		// Reset focus to top of new slide.
-		const currentSlide = document.querySelector('section.present h2');
-		currentSlide.setAttribute('tabindex', '-1');
-		currentSlide.focus();
 	}
 
 	/**
@@ -2332,10 +2336,6 @@ export default function( revealElement, options ) {
 			}
 		}
 
-		// Reset focus to top of new slide.
-		const currentSlide = document.querySelector('section.present h2');
-		currentSlide.setAttribute('tabindex', '-1');
-		currentSlide.focus();
 	}
 
 
