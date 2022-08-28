@@ -2295,6 +2295,10 @@ export default function( revealElement, options ) {
 			}
 		}
 
+		// Reset focus to top of new slide.
+		const currentSlide = document.querySelector('section.present h2');
+		currentSlide.setAttribute('tabindex', '-1');
+		currentSlide.focus();
 	}
 
 	/**
@@ -2328,6 +2332,10 @@ export default function( revealElement, options ) {
 			}
 		}
 
+		// Reset focus to top of new slide.
+		const currentSlide = document.querySelector('section.present h2');
+		currentSlide.setAttribute('tabindex', '-1');
+		currentSlide.focus();
 	}
 
 
@@ -2347,10 +2355,6 @@ export default function( revealElement, options ) {
 			pauseAutoSlide();
 		}
 
-		// Reset focus to top of new slide.
-		const currentSlide = document.querySelector('section.present');
-		currentSlide.setAttribute('tabindex', '-1');
-		currentSlide.focus();
 	}
 
 	/**
