@@ -287,7 +287,8 @@ export default function( revealElement, options ) {
 
 		dom.statusElement = createStatusElement();
 
-//		dom.wrapper.setAttribute( 'role', 'application' );
+		dom.wrapper.setAttribute( 'role', 'application' );
+		dom.wrapper.focus();
 	}
 
 	/**
