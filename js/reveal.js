@@ -286,9 +286,6 @@ export default function( revealElement, options ) {
 		dom.pauseOverlay = Util.createSingletonNode( dom.wrapper, 'div', 'pause-overlay', config.controls ? '<button class="resume-button">Resume presentation</button>' : null );
 
 		dom.statusElement = createStatusElement();
-
-		dom.wrapper.setAttribute( 'role', 'application' );
-		dom.wrapper.focus();
 	}
 
 	/**
