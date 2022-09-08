@@ -17,5 +17,5 @@ This workshop will introduce website accessibility testing and teach participant
 This will be an interactive workshop. Please bring a computer and headphones so you can participate fully in the workshop. We recommend having Chrome or Firefox installed on your computer for testing. Windows users, please install the current version of the NVDA screen reader on your computer before attending so you can maximize your testing time during the workshop.
 
 ## Aditional Information
-- (View Session on the WordCamp US website)[https://us.wordcamp.org/2022/session/website-accessibility-testing-workshop/]
-- (View slides on GitHub pages)[https://amberhinds.github.io/WCUS22-Accessibility-Testing]
+- [View Session on the WordCamp US website](https://us.wordcamp.org/2022/session/website-accessibility-testing-workshop/)
+- [View slides on GitHub pages](https://amberhinds.github.io/WCUS22-Accessibility-Testing)
