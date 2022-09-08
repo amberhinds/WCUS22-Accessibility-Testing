@@ -34,7 +34,6 @@ export default class Controls {
 		const revealElement = this.Reveal.getRevealElement();
 
 		this.element = document.createElement( 'aside' );
-		this.element.setAttribute( 'aria-label', 'Slide Controls' );
 		this.element.className = 'controls';
 		this.element.innerHTML =
 			`<button class="navigate-left" aria-label="${ rtl ? 'next slide' : 'previous slide' }"><div class="controls-arrow"></div></button>
