@@ -284,79 +284,6 @@ export default function( revealElement, options ) {
 
 		// Overlay graphic which is displayed during the paused mode
 		dom.pauseOverlay = Util.createSingletonNode( dom.wrapper, 'div', 'pause-overlay', config.controls ? '<button class="resume-button">Resume presentation</button>' : null );
-
-		dom.statusElement = createStatusElement();
-
-		dom.wrapper.setAttribute( 'role', 'application' );
-	}
-
-	/**
-	 * Creates a hidden div with role aria-live to announce the
-	 * current slide content. Hide the div off-screen to make it
-	 * available only to Assistive Technologies.
-	 *
-	 * @return {HTMLElement}
-	 */
-	function createStatusElement() {
-
-		let statusElement = dom.wrapper.querySelector( '.aria-status' );
-		if( !statusElement ) {
-			statusElement = document.createElement( 'div' );
-			statusElement.style.position = 'absolute';
-			statusElement.style.height = '1px';
-			statusElement.style.width = '1px';
-			statusElement.style.overflow = 'hidden';
-			statusElement.style.clip = 'rect( 1px, 1px, 1px, 1px )';
-			statusElement.classList.add( 'aria-status' );
-			statusElement.setAttribute( 'aria-live', 'polite' );
-			statusElement.setAttribute( 'aria-atomic','true' );
-			dom.wrapper.appendChild( statusElement );
-		}
-		return statusElement;
-
-	}
-
-	/**
-	 * Announces the given text to screen readers.
-	 */
-	function announceStatus( value ) {
-
-		dom.statusElement.textContent = value;
-
-	}
-
-	/**
-	 * Converts the given HTML element into a string of text
-	 * that can be announced to a screen reader. Hidden
-	 * elements are excluded.
-	 */
-	function getStatusText( node ) {
-
-		let text = '';
-
-		// Text node
-		if( node.nodeType === 3 ) {
-			text += node.textContent;
-		}
-		// Element node
-		else if( node.nodeType === 1 ) {
-
-			let isAriaHidden = node.getAttribute( 'aria-hidden' );
-			let isDisplayHidden = window.getComputedStyle( node )['display'] === 'none';
-			if( isAriaHidden !== 'true' && !isDisplayHidden ) {
-
-				Array.from( node.childNodes ).forEach( child => {
-					text += getStatusText( child );
-				} );
-
-			}
-
-		}
-
-		text = text.trim();
-
-		return text === '' ? '' : text + ' ';
-
 	}
 
 	/**
@@ -581,7 +508,6 @@ export default function( revealElement, options ) {
 
 		// Undo DOM changes
 		if( dom.pauseOverlay ) dom.pauseOverlay.remove();
-		if( dom.statusElement ) dom.statusElement.remove();
 
 		document.documentElement.classList.remove( 'reveal-full-page' );
 
@@ -1391,11 +1317,9 @@ export default function( revealElement, options ) {
 			slideContent.startEmbeddedContent( currentSlide );
 		}
 
-		// Announce the current slide contents to screen readers
 		// Use animation frame to prevent getComputedStyle in getStatusText
 		// from triggering layout mid-frame
 		requestAnimationFrame( () => {
-			announceStatus( getStatusText( currentSlide ) );
 		});
 
 		progress.update();
@@ -2295,6 +2219,10 @@ export default function( revealElement, options ) {
 			slide( indexh - 1, config.navigationMode === 'grid' ? indexv : undefined );
 		}
 
+		// Reset focus to top of new slide.
+		const currentSlide = document.querySelector('section.present .slide-title');
+		currentSlide.setAttribute('tabindex', '-1');
+		currentSlide.focus();
 	}
 
 	function navigateRight({skipFragments=false}={}) {
@@ -2312,6 +2240,10 @@ export default function( revealElement, options ) {
 			slide( indexh + 1, config.navigationMode === 'grid' ? indexv : undefined );
 		}
 
+		// Reset focus to top of new slide.
+		const currentSlide = document.querySelector('section.present .slide-title');
+		currentSlide.setAttribute('tabindex', '-1');
+		currentSlide.focus();
 	}
 
 	function navigateUp({skipFragments=false}={}) {
@@ -2780,10 +2712,6 @@ export default function( revealElement, options ) {
 	// Our internal API which controllers have access to
 	Util.extend( Reveal, {
 		...API,
-
-		// Methods for announcing content to screen readers
-		announceStatus,
-		getStatusText,
 
 		// Controllers
 		print,
